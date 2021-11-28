@@ -18,7 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  * Get all the links from a webpage and validate the link is broken or not.
  */
 public class ValidateLinksDemo {
-	// initiate browser and launch the application.
+	// initiate webdriver and launch browser and launch the application.
 	static WebDriver driver;
 	static String url = "https://opensource-demo.orangehrmlive.com/index.php/auth/login";
 
@@ -43,7 +43,7 @@ public class ValidateLinksDemo {
 			httpURLConnect.setConnectTimeout(5000);
 			httpURLConnect.connect();
 			if (httpURLConnect.getResponseCode() >= 400) {
-				System.out.println(link + " - " + httpURLConnect.getResponseMessage() + "is a broken link");
+				System.out.println(link + " - " + httpURLConnect.getResponseMessage() + "  is a broken link");
 			}
 
 			// Fetching and Printing the response code obtained
@@ -55,7 +55,7 @@ public class ValidateLinksDemo {
 		}
 	}
 
-	public void login(String userName, String password) throws InterruptedException {
+	public void validateLinks(String userName, String password) throws InterruptedException {
 
 		WebElement email = driver.findElement(By.id("txtUsername"));
 		email.clear();
@@ -89,8 +89,8 @@ public class ValidateLinksDemo {
 
 	@Test
 	public void test() throws InterruptedException {
-		login("Admin", "admin123");
-//		login("user1", "user1pwd");
+		validateLinks("Admin", "admin123");
+//		validateLinks("user1", "user1pwd");
 	}
 
 	@AfterMethod
