@@ -15,7 +15,7 @@ public class DemoGetText {
 
 //Create TestNG Test annotation 
 	@Test
-	public void test1() throws InterruptedException {
+	public void test3() throws InterruptedException {
 		// Driver and Browser initialization
 		String url = "http://www.fb.com";
 		WebDriverManager.chromedriver().setup();
@@ -48,6 +48,24 @@ public class DemoGetText {
 		WebElement emailID = driver.findElement(By.id("email"));
 		String placeHolderVale_Email = emailID.getAttribute("placeholder");
 		System.out.println("print placeholder value : "+placeHolderVale_Email);
+		
+		
+		//
+		// Use equalsIgnoreCase() method to verify actual title with expected title. 
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "facebook – Log in or Sign up";
+		if(actualTitle.equals(expectedTitle))  // Verifying the home page title.
+	     { 
+	        System.out.println("Verification is success" ); 
+	        System.out.println("Home page title is: " + actualTitle ); 
+	     } 
+	   else { 
+	       System.out.println("Verification is failed, Matched not found"); 
+	   }
+
+		
+		
+		
 		// close the browser
 		driver.close();
 

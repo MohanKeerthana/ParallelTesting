@@ -31,8 +31,6 @@ public class LoginLogoutFlow2 {
 		WebElement input_pwd = driver.findElement(By.cssSelector("#txtPassword"));
 
 		WebElement btn_login = driver.findElement(By.id("btnLogin"));
-
-
 		
 		input_email.clear();
 		input_email.sendKeys(userName);
