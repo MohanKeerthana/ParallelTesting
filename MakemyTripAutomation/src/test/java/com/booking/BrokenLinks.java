@@ -16,7 +16,7 @@ public class BrokenLinks {
 	       WebDriverManager.chromedriver().setup();
 	        WebDriver driver = new ChromeDriver();
 	        driver.manage().window().maximize();
-	        driver.get("https://demoqa.com/broken");
+	        driver.get("https://google.com");
 
 	        //Storing the links in a list and traversing through the links
 	        List<WebElement> links = driver.findElements(By.tagName("a"));
