@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<parameter name="v1_name" value="vv1 value"></parameter>
+		<parameter name="v2_name" value="vv2 value"></parameter>
+		<parameter name="v3_name" value="vv3 value"></parameter>
+
+		<classes>
+			<class name="com.dataProvider.DP_Demo"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
