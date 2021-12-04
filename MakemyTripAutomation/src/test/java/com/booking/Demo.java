@@ -41,7 +41,7 @@ public void test() {
 			driver.findElement(By.tagName("button")).click();
 			
 			
-			String count_searchResult = driver.findElement(By.id("fasdf"))
+			WebElement count_searchResult = driver.findElement(By.id("fasdf"));
 			System.out.println(count_searchResult);
 			
 			

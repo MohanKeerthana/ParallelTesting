@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test thread-count="5" name="Test">
+		<parameter name="e_name" value="Dominic Chase" />
+		<parameter name="u_name" value="Auto1" />
+		<parameter name="u_pwd" value="selenium123" />
+
+		<classes>
+			<class name="com.params.DemoCreateNewUser">
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
