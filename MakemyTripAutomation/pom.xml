@@ -6,16 +6,12 @@
 	<artifactId>MakemyTripAutomation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-
 	<dependencies>
-
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
 		</dependency>
-
-
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
@@ -27,7 +23,28 @@
 			<version>6.10</version>
 			<scope>test</scope>
 		</dependency>
-
+		<!-- to read xls file data -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-excelant</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+		<!-- till here to read xls file data -->
 	</dependencies>
 
 

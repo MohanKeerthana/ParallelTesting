@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Demo {
 //	static WebDriver driver;
 
-@Test
+@Test(timeOut = 5000)
 public void test() {
 
 //		System.setProperty("Webdriver.chrome.driver", "browser driver path");

@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dataProvider.DemoCreateNewUser_DP">
+      <class name="com.dec15.tests.demo.DemoLT">
         <methods>
-          <include name="setUp"/>
-          <include name="loginTest" invocation-numbers="2 4"/>
-          <include name="tearDown"/>
+          <include name="demoTest"/>
         </methods>
-      </class> <!-- com.dataProvider.DemoCreateNewUser_DP -->
+      </class> <!-- com.dec15.tests.demo.DemoLT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
